@@ -28,7 +28,3 @@
 - `thankyou.html`
 - `style.css`
 - `README.md`
-
-### Date
-
-18 September 2026

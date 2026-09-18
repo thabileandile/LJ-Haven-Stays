@@ -3,7 +3,7 @@
 ## Student Information
 
 **Student Name:** Thabile Jafta  
-**Student Number:** [Enter your student number]  
+**Student Number:** [ST10529016]  
 **Module:** WEDES5020  
 **Project:** Website Project – Part 1  
 **Organisation:** L&J Haven Stays  
@@ -152,3 +152,53 @@ L&J Haven Stays
 │
 └── Contact
     └── contact.html
+
+    ---
+
+## Part 2 – CSS and Responsive Design
+
+Part 2 builds on the HTML foundation created in Part 1 by adding CSS styling and responsive design to improve the appearance, usability and consistency of the L&J Haven Stays website.
+
+### CSS and Styling
+
+The website has been styled using an external CSS stylesheet named `style.css`. The stylesheet is linked to all website pages and provides a consistent visual design throughout the website.
+
+The CSS implementation includes:
+
+- Consistent Arial font for general website text.
+- A modern and clean heading style.
+- A baby-blue colour scheme.
+- Styled navigation links and buttons.
+- Consistent spacing, margins and padding.
+- Styled content sections and accommodation cards.
+- Responsive image sizing.
+- Responsive accommodation galleries.
+- Mobile-friendly page layouts.
+- Styled enquiry and contact forms.
+- Consistent header and footer design.
+- Responsive layouts for different screen sizes.
+
+### Responsive Design
+
+The website was tested using browser Developer Tools at different screen sizes, including desktop and mobile device views.
+
+The responsive design allows the website content to adjust according to the available screen width. Navigation and content sections stack appropriately on smaller screens, while accommodation galleries and other website elements remain readable and usable.
+
+The website was tested using a mobile viewport of approximately 400 × 645 pixels to verify that the pages remain functional on smaller devices.
+
+### Part 2 Pages
+
+The following pages were updated with the CSS stylesheet:
+
+- `index.html` – Homepage
+- `about.html` – About Us page
+- `properties.html` – Properties and accommodation page
+- `enquiry.html` – Enquiry form
+- `contact.html` – Contact page
+- `thankyou.html` – Enquiry confirmation page
+
+### Part 2 Changes
+
+Part 2 introduced visual styling and responsive functionality while maintaining the HTML structure developed in Part 1. The website was tested to ensure that navigation, images, forms and page layouts continue to function correctly across different screen sizes.
+
+The project was also prepared for GitHub version control and final submission.

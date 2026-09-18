@@ -1,0 +1,698 @@
+/* =========================================
+   L&J HAVEN STAYS - MAIN STYLESHEET
+   ========================================= */
+
+/* ---------- CSS RESET ---------- */
+@import url('https://fonts.googleapis.com./css2?family=Poppins:wght@500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Aptos", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #243746;
+    background-color: #f5fbff;
+}
+
+
+/* ---------- BASE TYPOGRAPHY ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins" , Arial, sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #247ba0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #2b6f8a;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #1677a8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0b4f6c;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #083b50;
+}
+
+
+/* ---------- HEADER & NAVIGATION ---------- */
+
+header {
+    background: linear-gradient(135deg, #bfe9f7, #dff6fc);
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid #a8dceb;
+    box-shadow: 0 0.2rem 0.8rem rgba(36, 123, 160, 0.12);
+}
+
+header h1 {
+    color: #0b4f6c;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.55rem 0.8rem;
+    border-radius: 0.5rem;
+    color: #164e63;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #0b6e99;
+    text-decoration: none;
+    box-shadow: 0 0.2rem 0.6rem rgba(36, 123, 160, 0.15);
+}
+
+nav a:active {
+    transform: scale(0.97);
+}
+
+
+/* ---------- MAIN CONTENT ---------- */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2.5rem auto;
+}
+
+main > section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #d6edf5;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(36, 123, 160, 0.08);
+}
+
+main > section:first-child {
+    border-top: 0.3rem solid #8fd3e8;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #c9e7f1;
+    margin: 2rem 0;
+}
+
+
+/* ---------- HOMEPAGE ---------- */
+
+main > section:first-child {
+    text-align: center;
+}
+
+main > section:first-child img {
+    display: block;
+    width: min(300px, 80%);
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(36, 123, 160, 0.18);
+}
+
+main > section:first-child p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ---------- PROPERTY CARDS ---------- */
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2 rem;
+}
+
+
+.property-card {
+    background: #f3fbfe;
+    border: 1px solid #c7e8f2;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.7rem 1.5rem rgba(36, 123, 160, 0.16);
+}
+
+.property-card img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+.property-card h3,
+.property-card p {
+    text-align: center;
+}
+
+
+/* ---------- LISTS ---------- */
+
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+
+/* ---------- PROPERTY GALLERIES ---------- */
+
+main > section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.7rem;
+}
+
+main > section h3 + img {
+    margin-top: 0.5rem;
+}
+
+
+/* ---------- FORMS ---------- */
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 1.3rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #24566b;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #243746;
+    background-color: #fbfeff;
+    border: 1px solid #a9d8e7;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #329bc0;
+    box-shadow: 0 0 0 0.2rem rgba(50, 155, 192, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: #5bb9d6;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #2f91b2;
+    box-shadow: 0 0.3rem 0.8rem rgba(36, 123, 160, 0.2);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:focus {
+    outline: 0.2rem solid #bfe9f7;
+    outline-offset: 0.15rem;
+}
+
+
+/* ---------- CONTACT INFORMATION ---------- */
+
+main section p strong {
+    color: #155d78;
+}
+
+
+/* ---------- MAPS ---------- */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 1rem 0 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.3rem 1rem rgba(36, 123, 160, 0.12);
+}
+
+
+/* ---------- THANK YOU PAGE ---------- */
+
+body:has(h2:first-child) {
+    min-height: 100vh;
+}
+
+main > h2 {
+    margin-bottom: 1rem;
+}
+
+
+/* ---------- SMALL TEXT ---------- */
+
+small {
+    color: #52717e;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #0b4f6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 5%;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    main > section {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 1.2rem 4%;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 1.5rem auto;
+    }
+
+    main > section {
+        padding: 1.2rem;
+        border-radius: 0.7rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .property-card {
+        padding: 1rem;
+    }
+
+    .property-card img {
+        max-width: 100%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 1.2rem 4%;
+    }
+}
+/* -------- RESPONSIVE DESIGN -------- */
+
+@media (max-width: 768px) {
+
+    .property-card {
+        width: 100%;
+    }
+
+    .property-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .property-card img {
+        height: 200px;
+    }
+
+    main {
+        width: 94%;
+    }
+}
+/* -------- RESPONSIVE DESIGN -------- */
+
+@media (max-width: 768px) {
+
+    .property-card {
+        width: 100%;
+    }
+
+    .property-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .property-card img {
+        height: 200px;
+    }
+
+    main {
+        width: 94%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .property-card {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .property-card {
+        grid-column: 1 / -1;
+    }
+
+}
+
+/* Property image gallery */
+.property-gallery {
+    display: grid;
+    grid-area: gallery;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.property-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: block;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    grid-column: auto;
+}
+
+/* Mobile gallery */
+@media (max-width: 600px) {
+    .property-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .property-gallery img {
+        height: 230px;
+    }
+}
+/* Accommodation feature card */
+.property-features {
+    background-color: #dff3ff;
+    grid-area: features;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.property-features h3 {
+    color: #1769aa;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+.property-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.property-features li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(23, 105, 170, 0.15);
+}
+
+.property-features li:last-child {
+    border-bottom: none;
+}
+
+.property-features p {
+    margin-top: 1.5rem;
+}
+
+.property-features a {
+    display: inline-block;
+    background-color: #1769aa;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.property-features a:hover {
+    background-color: #0d4f80;
+}
+/* Property gallery and features layout */
+.property-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "gallery features";
+    gap: 2rem;
+    align-items: start;
+}
+
+.property-features {
+    height: fit-content;
+}
+
+/* Mobile property layout */
+@media (max-width: 600px) {
+    .property-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "gallery"
+            "features";
+        }
+}
+/* Desktop property gallery */
+@media (min-width: 601px) {
+    .property-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .property-gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+/* Facility icons */
+.facility-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.facility-list li span {
+    font-size: 1.1rem;
+    min-width: 1.5rem;
+}
