@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&J Haven Stays | Enquiry</title>
+</head>
+
+<body>
+
+    <!-- Website header and main navigation -->
+    <header>
+        <h1>L&J Haven Stays</h1>
+
+        <!-- Navigation links to all main website pages -->
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="properties.html">Properties</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main content of the enquiry page -->
+    <main>
+
+        <!-- Introduction to the enquiry form -->
+        <section>
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Interested in staying at L&J Haven Stays?
+                Complete the form below and provide your requirements.
+                Our team can then assist you with your enquiry.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Accommodation enquiry form -->
+        <section>
+            <h2>Accommodation Enquiry Form</h2>
+
+            <form action="thankyou.html" method="get">
+
+                <!-- Guest name -->
+                <p>
+                    <label for="name">Full Name:</label>
+                    <br>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your full name"
+                           required>
+                </p>
+
+                <!-- Guest email address -->
+                <p>
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email address"
+                           required>
+                </p>
+
+                <!-- Guest contact number -->
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <br>
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="Enter your phone number">
+                </p>
+
+                <!-- Property selection -->
+                <p>
+                    <label for="property">Preferred Property:</label>
+                    <br>
+
+                    <select id="property" name="property" required>
+                        <option value="">Please select a property</option>
+                        <option value="ocean-haven">Ocean Haven</option>
+                        <option value="palm-retreat">Palm Retreat</option>
+                    </select>
+                </p>
+
+                <!-- Number of guests -->
+                <p>
+                    <label for="guests">Number of Guests:</label>
+                    <br>
+
+                    <input type="number"
+                           id="guests"
+                           name="guests"
+                           min="1"
+                           max="6"
+                           placeholder="Enter number of guests"
+                           required>
+                </p>
+
+                <!-- Preferred check-in date -->
+                <p>
+                    <label for="checkin">Preferred Check-in Date:</label>
+                    <br>
+
+                    <input type="date"
+                           id="checkin"
+                           name="checkin"
+                           required>
+                </p>
+
+                <!-- Preferred check-out date -->
+                <p>
+                    <label for="checkout">Preferred Check-out Date:</label>
+                    <br>
+
+                    <input type="date"
+                           id="checkout"
+                           name="checkout"
+                           required>
+                </p>
+
+                <!-- Additional guest message -->
+                <p>
+                    <label for="message">Additional Information:</label>
+                    <br>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              cols="40"
+                              placeholder="Tell us about your accommodation requirements..."
+                              required></textarea>
+                </p>
+
+                <!-- Form submission button -->
+                <p>
+                    <button type="submit">Submit Enquiry</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Website footer containing copyright information -->
+    <footer>
+        <p>&copy; 2026 L&J Haven Stays. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
