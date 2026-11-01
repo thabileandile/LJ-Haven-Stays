@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L&J Haven Stays | Enquiry</title>
+
+    <title>Accommodation Enquiry | L&J Haven Stays</title>
+
+    <meta name="description"
+          content="Submit an accommodation enquiry for Ocean Haven or Palm Retreat in Salt Rock, KwaZulu-Natal. Tell us your preferred dates and guest requirements.">
+
+    <meta name="keywords"
+          content="accommodation enquiry, Salt Rock bookings, Ocean Haven booking, Palm Retreat booking, L&J Haven Stays">
+
+    <meta name="author" content="L&J Haven Stays">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+
 
 <body>
 
@@ -44,7 +56,7 @@
         <section>
             <h2>Accommodation Enquiry Form</h2>
 
-            <form action="thankyou.html" method="get">
+            <form id ="enquiryForm">
 
                 <!-- Guest name -->
                 <p>
@@ -107,22 +119,25 @@
                 <p>
                     <label for="checkin">Preferred Check-in Date:</label>
                     <br>
-
-                    <input type="date"
-                           id="checkin"
-                           name="checkin"
-                           required>
+                <input type="text"
+                       id="checkin"
+                      name="checkin"
+                       placeholder="DD/MM/YYYY"
+                       required>
+                        
                 </p>
 
                 <!-- Preferred check-out date -->
                 <p>
                     <label for="checkout">Preferred Check-out Date:</label>
                     <br>
-
-                    <input type="date"
-                           id="checkout"
-                           name="checkout"
-                           required>
+                <input type="text"
+                         id="checkout"
+                         name="checkout"
+                       placeholder="DD/MM/YYYY"
+                        required></textarea>
+                
+                 
                 </p>
 
                 <!-- Additional guest message -->
@@ -136,15 +151,19 @@
                               cols="40"
                               placeholder="Tell us about your accommodation requirements..."
                               required></textarea>
+                  
                 </p>
+              <!-- Form error message -->
 
-                <!-- Form submission button -->
-                <p>
-                    <button type="submit">Submit Enquiry</button>
-                </p>
+             <p id="enquiryError" role="alert"></p>
 
-            </form>
+                       <!-- Form submission button -->
+                 <p>
 
+                  <button type="submit">Submit Enquiry</button>
+
+              </p>
+                
         </section>
 
     </main>
@@ -153,6 +172,12 @@
     <footer>
         <p>&copy; 2026 L&J Haven Stays. All rights reserved.</p>
     </footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
 
 </body>
 

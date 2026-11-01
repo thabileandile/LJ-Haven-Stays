@@ -4,8 +4,8 @@
 
 **Student Name:** Thabile Jafta  
 **Student Number:** [ST10529016]  
-**Module:** WEDES5020  
-**Project:** Website Project – Part 1  
+**Module:** WEDE5020  
+**Project:** Website Project – Parts 1, 2, & 3
 **Organisation:** L&J Haven Stays  
 
 ---
@@ -202,3 +202,100 @@ The following pages were updated with the CSS stylesheet:
 Part 2 introduced visual styling and responsive functionality while maintaining the HTML structure developed in Part 1. The website was tested to ensure that navigation, images, forms and page layouts continue to function correctly across different screen sizes.
 
 The project was also prepared for GitHub version control and final submission.
+
+
+
+
+## Part 3 – JavaScript Functionality and Interactivity
+
+Part 3 builds on the HTML and CSS foundation developed in Parts 1 and 2 by introducing JavaScript functionality, interactive website elements, form validation and dynamic content.
+
+### JavaScript Implementation
+
+JavaScript was implemented using separate external files stored in the `js` folder.
+
+The JavaScript files include:
+
+- `main.js` – Handles active navigation highlighting, scroll reveal animations and accessibility considerations.
+- `home.js` – Dynamically generates accommodation property cards on the homepage.
+- `properties.js` – Implements property searching, filtering and alphabetical sorting.
+- `gallery.js` – Implements an interactive image gallery lightbox for enlarged property images.
+- `forms.js` – Handles contact and accommodation enquiry form validation, date selection and AJAX submission.
+
+### Interactive Website Features
+
+The following interactive features were implemented:
+
+- Scroll reveal animations for selected website sections.
+- Dynamic property cards on the homepage.
+- Property search functionality.
+- Alphabetical property sorting in ascending and descending order.
+- Interactive property image galleries.
+- Lightbox functionality allowing visitors to enlarge and close property images.
+-- Google Maps integration displaying illustrative demonstration locations for Ocean Haven and Palm Retreat in Salt Rock. 
+
+### Form Validation and Processing
+
+The website includes separate accommodation enquiry and contact forms.
+
+The contact form incorporates:
+
+- Required form fields.
+- HTML5 form validation.
+- JavaScript client-side validation.
+- Custom validation messages.
+- Email format and telephone number checks.
+- AJAX form submission using the FormSubmit service.
+- Email delivery of submitted contact information.
+
+The contact form was tested successfully, including its validation, activation and email submission process.
+
+The accommodation enquiry form includes:
+
+- Required field validation.
+- Email and telephone number checks.
+- Date selection using a calendar picker in DD/MM/YYYY format.
+- Check-in and check-out date validation.
+- AJAX submission and successful submission confirmation.
+
+### Search Engine Optimisation and Accessibility
+
+SEO and accessibility improvements were introduced across the website.
+
+These include:
+
+- Descriptive page titles.
+- Meta descriptions and keywords.
+- Author metadata.
+- Descriptive image filenames.
+- Meaningful alternative text for images.
+- Responsive image attributes using `srcset` and `sizes`.
+- Semantic HTML elements.
+- Accessible form labels and validation feedback.
+
+The thank-you page includes a `noindex` directive to discourage search engines from displaying it as a standalone search result.
+
+### Testing and Quality Assurance
+
+Testing was performed to assess website functionality and usability.
+
+The testing included:
+
+- Checking website navigation.
+- Testing the property search and sorting functionality.
+- Testing gallery image enlargement and closing interactions.
+- Checking Google Maps embeds.
+- Testing contact form validation.
+- Testing AJAX submission and email delivery.
+- Checking responsive layouts.
+- Checking image display and alternative text.
+
+### Project Development and Version Control
+
+The website was developed using HTML, CSS and JavaScript. Visual Studio Code was used as the development environment.
+
+GitHub was used for version control and project management. The project documentation includes a README file and changelog to record development progress and changes made throughout the project.
+
+### Conclusion
+
+The L&J Haven Stays website has progressed from a basic HTML structure into a styled, responsive and interactive accommodation website. The implementation of JavaScript, dynamic content, interactive maps, image galleries, form validation and email processing improves the website's functionality and user experience.

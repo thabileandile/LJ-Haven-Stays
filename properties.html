@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L&J Haven Stays | Properties</title>
+
+    <title>Our Properties | Ocean Haven & Palm Retreat</title>
+
+    <meta name="description"
+          content="Explore Ocean Haven and Palm Retreat, two comfortable coastal accommodation options in Salt Rock, KwaZulu-Natal, offered by L&J Haven Stays.">
+
+    <meta name="keywords"
+          content="Ocean Haven, Palm Retreat, Salt Rock accommodation, coastal holiday accommodation, L&J Haven Stays">
+
+    <meta name="author" content="L&J Haven Stays">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
@@ -26,18 +37,49 @@
 
     <!-- Main content containing information about the properties -->
     <main>
+        
+<h2>Our Properties</h2>
 
-        <h2>Our Properties</h2>
+<p>
+    Explore our comfortable and peaceful accommodation options
+    at L&J Haven Stays.
+</p>
 
-        <p>
-            Explore our comfortable and peaceful accommodation options
-            at L&J Haven Stays.
-        </p>
+<!-- Property search and sorting -->
+<div class="property-search">
 
-        <hr>
+    <h3>Find Your Perfect Stay</h3>
+
+    <label for="propertySearch">Search properties:</label>
+    <input
+        type="search"
+        id="propertySearch"
+        placeholder="Search by name or facility..."
+    >
+
+    <label for="propertySort">Sort properties:</label>
+    <select id="propertySort">
+        <option value="default">Default order</option>
+        <option value="ascending">Name: A to Z</option>
+        <option value="descending">Name: Z to A</option>
+    </select>
+
+    <p id="propertyResults" role="status" aria-live="polite">
+        Showing all 2 properties.
+    </p>
+
+</div>
+
+<hr>
+
+<div id="propertyList">
+
+
+      
+        <div id="propertyList">
 
         <!-- Ocean Haven accommodation section -->
-        <section>
+        <section class="property-card" data-property="Ocean Haven">
             <h2>Ocean Haven</h2>
 
             <p>
@@ -109,7 +151,7 @@
         <hr>
 
         <!-- Palm Retreat accommodation section -->
-        <section>
+        <section class="property-card" data-property="Palm Retreat">
             <h2>Palm Retreat</h2>
 
             <p>
@@ -176,6 +218,7 @@
             </div>
             
         </section>
+    </div>
 
     </main>
 
@@ -183,6 +226,10 @@
     <footer>
         <p>&copy; 2026 L&J Haven Stays. All rights reserved.</p>
     </footer>
+
+ <script src="js/main.js" defer></script>
+<script src="js/properties.js" defer></script>
+<script src="js/gallery.js" defer></script>
 
 </body>
 

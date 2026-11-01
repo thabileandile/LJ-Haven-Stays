@@ -696,3 +696,145 @@ footer p {
     font-size: 1.1rem;
     min-width: 1.5rem;
 }
+/* =================================
+   IMAGE GALLERY LIGHTBOX
+================================= */
+
+.lj-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.lj-lightbox.active {
+    display: flex;
+}
+
+.lj-lightbox-image {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+.lj-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lj-lightbox-close:hover {
+    color: #add8e6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .lj-lightbox {
+        padding: 15px;
+    }
+
+    .lj-lightbox-image {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+
+    .lj-lightbox-close {
+        top: 12px;
+        right: 18px;
+    }
+}
+/* =================================
+   FAQ ACCORDION
+================================= */
+
+.faq-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #c5dceb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 16px;
+    background-color: #eaf5ff;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #24445c;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #d8ebfa;
+}
+
+.faq-question:focus-visible {
+    outline: 2px solid #397eae;
+    outline-offset: -2px;
+}
+
+.faq-icon {
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.faq-answer {
+    padding: 5px 16px 12px;
+    background-color: #ffffff;
+}
+
+.faq-answer p {
+    margin-bottom: 5px;
+}
+/*
+   SCROLL REVEAL ANIMATIONS
+*/
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.map-note {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 8px;
+}
