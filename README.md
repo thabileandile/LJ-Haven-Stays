@@ -296,6 +296,12 @@ The website was developed using HTML, CSS and JavaScript. Visual Studio Code was
 
 GitHub was used for version control and project management. The project documentation includes a README file and changelog to record development progress and changes made throughout the project.
 
+### Added
+- Created a dedicated References page (`references.html`).
+- Added Pexels as an image source acknowledgement.
+- Added References links to the footers of all six main website pages.
+- Updated website documentation to include the References page.
+
 ### Conclusion
 
 The L&J Haven Stays website has progressed from a basic HTML structure into a styled, responsive and interactive accommodation website. The implementation of JavaScript, dynamic content, interactive maps, image galleries, form validation and email processing improves the website's functionality and user experience.

@@ -46,7 +46,7 @@
 - Added JavaScript validation with custom error messages for the contact form.
 - Implemented AJAX form submission using FormSubmit for both contact and accommodation enquiry forms.
 - Tested the contact form and confirmed that submitted messages were received by email.
-- - Integrated Google Maps displaying illustrative demonstration locations for Ocean Haven and Palm Retreat in Salt Rock.
+- Integrated Google Maps displaying illustrative demonstration locations for Ocean Haven and Palm Retreat in Salt Rock.
 - Updated page titles, meta descriptions and keywords to improve SEO.
 - Reviewed image alt text and SEO metadata across the website.
 - Tested property search and alphabetical sorting.

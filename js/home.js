@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "A comfortable and relaxing accommodation option, accommodating up to 4 guests."
         }
 
+        
     ];
 
     // Find the property grid on the homepage
